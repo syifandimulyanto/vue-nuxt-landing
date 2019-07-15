@@ -1,0 +1,14 @@
+@media screen and (max-width: 500px){
+    header {
+        padding: 0;
+        .logo {
+            background-color: $color-white;
+        }
+        .logo .title p{
+            display: none;
+        }
+        .menu {
+            display: none;
+        }
+    }
+}

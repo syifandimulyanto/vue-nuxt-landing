@@ -1,0 +1,120 @@
+// Color Pattern
+$color-white	: #fff;
+$color-black    : #000000;
+$color-primary  : #3040C4;
+
+$header-color   : #F3C6BD;
+
+body{
+	background-color: $color-white;
+	overflow-x: hidden;
+}
+
+header {
+    background-color: $header-color;
+    min-height: 710px;
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 130px;
+	z-index: 10;
+    transition: all .4s ease;
+    .container {
+        margin-top: 37px;
+    }
+    .logo{
+		float: left;
+		img{
+			position: absolute;
+			top: -5px;
+        }
+        .title {
+            position: absolute;
+            top: 0;
+            left: 6.58%;
+            h4 {
+                top: calc(50% - 51px/2 + 0.5px);
+                font-weight: bold;
+                font-size: 20px;
+            }
+            p {
+                top: calc(50% - 51px/2 + 0.5px);
+                line-height: 25px;
+                font-size: 18px;
+                color: rgba(43, 41, 45, 0.6);
+            }
+        }
+    }
+    .menu{
+        float: right;
+		ul{
+			list-style: none;
+			li{
+                display: inline-block;
+                font-size: 18px;
+				a{
+                    font-size: 15px;
+                    color: $color-black;
+                }
+                a.sub-menu {
+                    padding-right: 40px;
+                }
+                a.sub-menu.with-dropdown::after{
+                    content: "";
+                    padding: 10px;
+                    vertical-align: -0.745em;
+                    margin-left: 10px;
+                    display: inline-block;
+                    background-image: url('~assets/image/arrow-down.png');
+                    background-repeat: no-repeat;
+                }
+            }
+            li.active {
+                font-style: normal;
+                font-weight: bold;
+            }
+		}
+	}
+}
+
+.section-top{ 
+    z-index: 100;
+    height: 60vw;
+    position: relative;
+    top: 340px;
+    .title-section{
+        z-index: 100;
+        position: absolute;
+	    left: 30%;
+	    transform: translate(-50%,-50%);
+        h1{
+            font-weight: bold;
+            font-size: 80px;
+            letter-spacing: -0.5px;
+            line-height: 78px;
+        }
+        p {
+            max-width: 450px;
+            margin-top: 30px;
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        .learn-or-started{
+            padding-top: 50px;
+        }
+    }
+    .image-section{
+        position: absolute;
+		right: 0;
+		top: -160px;
+		img{
+			position: relative;
+		}
+    }
+}
+
+a.get-started, a.learn-more{
+    font-weight: bold;
+}
