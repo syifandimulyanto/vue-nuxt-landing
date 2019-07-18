@@ -1,14 +1,130 @@
-@media screen and (max-width: 500px){
+@media screen and (max-width: 800px){
     header {
+        background: $color-white;
         padding: 0;
-        .logo {
-            background-color: $color-white;
-        }
-        .logo .title p{
-            display: none;
-        }
+        min-height: auto;
+        max-height: 100px;
+        top: 0;
+        left: 0;
+        bottom: auto;
         .menu {
             display: none;
         }
+    }
+    .section-top {
+        background: $header-color;
+        padding: 0 15px;
+        height: 100%;
+        top: 85px;
+        .title-section {
+            position: relative;
+            transform: none;
+            left: 0;
+            h1 {
+                font-size: 50px;
+                line-height: 50px;
+                letter-spacing: -0.3125px;
+            }
+            .learn-or-started {
+                a {
+                    display: block;
+                    vertical-align: auto;
+                }
+            }
+        }
+        .image-section {
+            top: auto;
+            position: relative;
+        }
+    }
+    .section-home-second {
+        height: auto;
+        padding: 45px 15px;
+        margin-top: 65px;
+        .column {
+            height: auto;
+            .content {
+                position: relative;
+                top: auto;
+            }
+        }
+    }
+    .section-home-third {
+        padding: 45px 15px;
+        .feature {
+            .acquire-section {
+                img.look {
+                    display: none;
+                }
+            } 
+        }
+        .bg-image {
+            img {
+                display: none;
+            }
+        }
+    }
+    .section-home-four {
+        padding: 45px 15px;
+    }
+    .section-home-five {
+        padding: 45px 15px;
+    }
+    .section-home-six {
+        padding: 45px 15px;
+        .head-title {
+            padding: 0;
+            position: relative;
+            transform: none;
+            left: auto;
+            .learn-or-started {
+                a {
+                    display: block;
+                }
+            }
+        }
+        .card-content {
+            margin: auto;
+        }
+    }
+    .section-home-seven {
+        padding: 45px 15px;
+        .head {
+            img.import {
+                position: relative;
+                right: auto;
+                margin: auto
+            }
+        }
+    }
+    .section-home-eight {
+        padding: 45px 15px;
+        .hiring {
+            .head {
+                a {
+                    display: block;
+                }
+            }
+            .career-position {
+                .list {
+                    .position {
+                        h3 {
+                            display: block;
+                        }
+                        small {
+                            margin-top: 10px;
+                            display: inline-block;
+                            float: inherit;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-home-nine {
+        padding: 45px 15px;
+    }
+    .section-footer {
+        padding: 45px 15px;
     }
 }

@@ -1,22 +1,25 @@
 <template>
   <div>
     <section class="section-top">
-      <div class="container">
+      <div class="columns">
+        <div class="column">
           <div class="title-section">
-              <h1>Build stunning <br> websites & apps.</h1>
-              <p>Create live segments and target the right people for messages based on their behaviors.</p>
-              <div class="learn-or-started">
-                <a href="#" class="btn primary get-started">Get Started </a> &nbsp;&nbsp;
-                <a href="#" class="btn info learn-more">Learn More</a>
-              </div>
+            <h1>Build stunning <br> websites & apps.</h1>
+            <p>Create live segments and target the right people for messages based on their behaviors.</p>
+            <div class="learn-or-started">
+              <a href="#" class="btn primary get-started">Get Started </a> &nbsp;&nbsp;
+              <a href="#" class="btn info learn-more">Learn More</a>
+            </div>
           </div>
+        </div>
+        <div class="column">
           <div class="image-section">
             <img src="~assets/image/ouch.png">
           </div>
+        </div>
       </div>
     </section>
     <section class="section-home-second">
-      <div class="container">
         <div class="columns">
           <div class="column">
             <div class="content">
@@ -31,76 +34,71 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     <section class="section-home-third">
-      <div class="container">
-        <div class="columns sponsorship-image">
-          <div class="column">
-            <img src="~assets/image/tnt.png">
-          </div>
-          <div class="column">
-            <img src="~assets/image/forbes.png">
-          </div>
-          <div class="column">
-            <img src="~assets/image/apple.png">
-          </div>
-          <div class="column">
-            <img src="~assets/image/mashable.png">
-          </div>
-          <div class="column">
-            <img src="~assets/image/wsj.png">
-          </div>
-          <div class="column">
-            <img src="~assets/image/google.png">
-          </div>
+      <div class="columns sponsorship-image is-mobile">
+        <div class="column">
+          <img src="~assets/image/tnt.png">
         </div>
-        <div class="feature">
-          <div class="columns">
-            <div class="column">
-              <a href="" class="small-title">Features</a>
-              <h1>Easily find leads and customers</h1>
-              <p>Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
-              <div class="acquire-section">
-                <img class="look" src="~assets/image/look.png">
-                <h3>Acquire new customers</h3>
-                <p>Everything you need to start building – including open-source code, documentation.</p>
-                <ul>
-                  <li><img src="~assets/image/engage.png"> Engage users </li>
-                  <li><img src="~assets/image/across.png"> Develop across platforms</li>
-                </ul>
-              </div>
+        <div class="column">
+          <img src="~assets/image/forbes.png">
+        </div>
+        <div class="column">
+          <img src="~assets/image/apple.png">
+        </div>
+        <div class="column">
+          <img src="~assets/image/mashable.png">
+        </div>
+        <div class="column">
+          <img src="~assets/image/wsj.png">
+        </div>
+        <div class="column">
+          <img src="~assets/image/google.png">
+        </div>
+      </div>
+      <div class="feature">
+        <div class="columns">
+          <div class="column">
+            <a href="" class="small-title">Features</a>
+            <h1>Easily find leads and customers</h1>
+            <p>Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
+            <div class="acquire-section">
+              <img class="look" src="~assets/image/look.png">
+              <h3>Acquire new customers</h3>
+              <p>Everything you need to start building – including open-source code, documentation.</p>
+              <ul>
+                <li><img src="~assets/image/engage.png"> Engage users </li>
+                <li><img src="~assets/image/across.png"> Develop across platforms</li>
+              </ul>
             </div>
-            <div class="column bg-image">
-              <img src="~assets/image/invision.png">
-            </div>
+          </div>
+          <div class="column bg-image">
+            <img src="~assets/image/invision.png">
           </div>
         </div>
       </div>
     </section>
     <section class="section-home-four">
-      <div class="container">
-        <div class="columns">
-          <div class="column left-content">
-            <div class="timeline">
-              <img src="~assets/image/timeline.png">
-            </div>
-            <div class="timeline">
-              <p>Connect with customers and grow faster</p>
-            </div>
+      <div class="columns">
+        <div class="column left-content">
+          <div class="timeline">
+            <img src="~assets/image/timeline.png">
           </div>
-          <div class="column right-content">
-            <a href="#" class="team-inbox">Team Inbox</a>
-            <h1 class="conversation">Manage <br> conversations</h1>
-            <p class="conversation-detail">One place to manage and respond to all conversations with leads and users. Receive messages from leads.</p>
-            <div class="box-card">
-              <p>“Great widgets. Great selection. Great design and <b>easy to implement</b>. Definitely a huge time saver for a web developer!”</p>
-              <div class="profile">
-                <img src="~assets/image/vanila.png"> 
-                <div class="profile-description">
-                  <h3>Viella Malkovich</h3> 
-                  <small>Creative Director at Johnson</small>
-                </div>
+          <div class="timeline">
+            <p>Connect with customers and grow faster</p>
+          </div>
+        </div>
+        <div class="column right-content">
+          <a href="#" class="team-inbox">Team Inbox</a>
+          <h1 class="conversation">Manage <br> conversations</h1>
+          <p class="conversation-detail">One place to manage and respond to all conversations with leads and users. Receive messages from leads.</p>
+          <div class="box-card">
+            <p>“Great widgets. Great selection. Great design and <b>easy to implement</b>. Definitely a huge time saver for a web developer!”</p>
+            <div class="profile">
+              <img src="~assets/image/vanila.png"> 
+              <div class="profile-description">
+                <h3>Viella Malkovich</h3> 
+                <small>Creative Director at Johnson</small>
               </div>
             </div>
           </div>
@@ -108,34 +106,32 @@
       </div>
     </section>
     <section class="section-home-five">
-      <div class="container">
-        <div class="columns">
-          <div class="column left-content">
-            <a href="#" class="communicate">Communicate Better</a>
-            <h1>Built for busy small teams</h1>
-            <p>Three products that can be used independently or combined together for your company’s needs.</p>
-            <a href="#" class="btn primary get-started">Get Started</a>
-          </div>
-          <div class="column right-content">
-            <div class="better">
-              <img src="~assets/image/phone.png">
-              <p>A better way to acquire new users</p>
-            </div>
+      <div class="columns">
+        <div class="column left-content">
+          <a href="#" class="communicate">Communicate Better</a>
+          <h1>Built for busy small teams</h1>
+          <p>Three products that can be used independently or combined together for your company’s needs.</p>
+          <a href="#" class="btn primary get-started">Get Started</a>
+        </div>
+        <div class="column right-content">
+          <div class="better">
+            <img src="~assets/image/phone.png">
+            <p>A better way to acquire new users</p>
           </div>
         </div>
-        <div class="columns content-row-description">
-          <div class="column content">
-            <p><b>Subscriptions.</b> Foundation works with the tools and services you already use every day.</p>
-            <a href="">Learn more about subscriptions</a>
-          </div>
-          <div class="column content">
-            <p><b>Felxible Hours.</b> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.</p>
-            <a href="">Learn more about subscriptions</a>
-          </div>
-          <div class="column content">
-            <p><b>Fast Communication.</b> We offer measures like 2FA and SSO to ensure the safety of your data.</p>
-            <a href="">Learn more about subscriptions</a>
-          </div>
+      </div>
+      <div class="columns content-row-description">
+        <div class="column content">
+          <p><b>Subscriptions.</b> Foundation works with the tools and services you already use every day.</p>
+          <a href="">Learn more about subscriptions</a>
+        </div>
+        <div class="column content">
+          <p><b>Felxible Hours.</b> Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.</p>
+          <a href="">Learn more about subscriptions</a>
+        </div>
+        <div class="column content">
+          <p><b>Fast Communication.</b> We offer measures like 2FA and SSO to ensure the safety of your data.</p>
+          <a href="">Learn more about subscriptions</a>
         </div>
       </div>
     </section>
@@ -178,7 +174,7 @@
     </section>
     <section class="section-home-seven">
       <div class="container">
-        <div class="columns sponsorship-image">
+        <div class="columns sponsorship-image is-mobile">
           <div class="column">
             <img src="~assets/image/tnt.png">
           </div>
