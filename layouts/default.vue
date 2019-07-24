@@ -5,7 +5,7 @@
         <div class="logo">
           <a href="#"><img src="~assets/image/icon.png"></a>
           <div class="title">
-            <h4>Foundation</h4>
+            <h4>Foundations</h4>
             <p>Startup Landing Template</p>
           </div>
         </div>
