@@ -13,8 +13,6 @@ body{
 
 header {
     background-color: $header-color;
-    min-height: 700px;
-    position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -48,52 +46,93 @@ header {
             }
         }
     }
-    .menu{
+    .menu {
         float: right;
 		ul{
 			list-style: none;
 			li{
                 display: inline-block;
                 font-size: 18px;
+                &.active {
+                    font-style: normal;
+                    font-weight: bold;
+                }
 				a{
                     font-size: 15px;
                     color: $color-black;
-                }
-                a.sub-menu {
-                    padding-right: 40px;
-                }
-                a.get-started{
-                    display: inline-block;
-                    margin-top: 5px;
-                }
-                a.sub-menu.with-dropdown::after{
-                    content: "";
-                    padding: 10px;
-                    vertical-align: -0.745em;
-                    margin-left: 10px;
-                    display: inline-block;
-                    background-image: url('~assets/image/arrow-down.png');
-                    background-repeat: no-repeat;
+                    position: relative;
+                    &.sub-menu {
+                        padding-right: 40px;
+                        &.with-dropdown {
+                            &:hover{
+                                &::before {
+                                    content: "";
+                                    width: 0; 
+                                    height: 0; 
+                                    border-left: 20px solid transparent;
+                                    border-right: 20px solid transparent;
+                                    border-bottom: 20px solid $color-white;
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: -25px;
+                                }
+                            }
+                            &::after{
+                                content: "";
+                                padding: 10px;
+                                vertical-align: -0.745em;
+                                margin-left: 10px;
+                                display: inline-block;
+                                background-image: url('~assets/image/arrow-down.png');
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                    &.get-started{
+                        display: inline-block;
+                        margin-top: 5px;
+                    }
                 }
             }
-            li.active {
-                font-style: normal;
-                font-weight: bold;
+        }
+        .dropdown {
+            z-index: 100;
+            max-width: 600px;
+            position: absolute;
+            background: $color-white;
+            box-shadow: 0px 11px 55px rgba(0, 0, 0, 0.07), 0px 29px 45px rgba(0, 0, 0, 0.08), 0px 13px 18px rgba(0, 0, 0, 0.15);
+            border-radius: 8px;
+            padding: 30px;
+            right: 250px;
+            .columns {
+                display: block;
+                .column {
+                    width: 90%;
+                    &.active h1 {
+                        color: #009B4D;
+                    }
+                    h1 {
+                        font-weight: bold;
+                        font-size: 22px;
+                        line-height: 26px;
+                        color: $color-black;
+                    }
+                    p {
+                        margin-top: 10px;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #2B292D;
+                    }
+                }
             }
-		}
+        }
 	}
 }
 
 .section-top{ 
-    z-index: 100;
-    height: 49vw;
-    position: relative;
-    top: 340px;
+    padding: 0 130px 100px 130px;
     .title-section{
-        z-index: 100;
-        position: absolute;
-	    left: 30%;
-	    transform: translate(-50%,-50%);
         h1{
             font-weight: bold;
             font-size: 80px;
@@ -112,9 +151,6 @@ header {
         }
     }
     .image-section{
-        position: absolute;
-		right: 0;
-		top: -160px;
 		img{
 			position: relative;
 		}
@@ -177,6 +213,8 @@ header {
                 background-size: 20px;
                 background-repeat: no-repeat;
                 padding: 10px;
+                position: relative;
+                top: 3px;
             }
             img.look{
                 position: absolute;
@@ -186,15 +224,14 @@ header {
                 position: relative;
                 margin-top: 20px;
                 li {
-                    font-style: normal;
                     font-weight: bold;
-                    font-size: 22px;
+                    font-size: 18px;
                     line-height: 26px;
                     padding: 15px;
                     border-bottom: 1px solid $color-gray;
                     img{
-                        height: 20px;
-                        width: 25px;
+                        height: 15px;
+                        width: 15px;
                     }
                 }
             }
@@ -396,11 +433,12 @@ header {
 
 .section-home-seven{
     padding: 20px 130px;
-    min-height: 800px;
+    min-height: 500px;
+    border-bottom: 2px solid #F2F2F2;
     .sponsorship-image {
         text-align: center;
     }
-    .head{
+    .head {
         text-align: center;
         h3{
             font-style: normal;
@@ -420,7 +458,39 @@ header {
         img.import{
             position: absolute;
             right: -100px;
-            margin-top: 100px;
+            top: 50%;
+        }
+    }
+    .testimony-profile { 
+        text-align: center;
+        margin-top: 34px;
+        .people {
+            .people-list {
+                h3 {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                p {
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: rgba(43, 41, 45, 0.6);
+                }
+            }
+            .dot {
+                margin-top: 35px;
+                span {
+                    display: inline-block;
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgba(43, 41, 45, 0.6);
+                }
+                span.active {
+                    background-color: $color-primary;
+                }
+            }
         }
     }
 }

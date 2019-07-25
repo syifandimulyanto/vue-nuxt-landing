@@ -7,8 +7,21 @@
         top: 0;
         left: 0;
         bottom: auto;
-        .menu {
-            display: none;
+        .head {
+            padding: 10px;
+            .logo {
+                img {
+                    width: auto;
+                }
+                .title {
+                    p {
+                        display: none
+                    }
+                }
+            }
+            .menu {
+                display: none;
+            }
         }
     }
     .section-top {
