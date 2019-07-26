@@ -44,6 +44,22 @@
             </div>   
           </div>
         </div>
+        <div class="border-menu">
+          <a href="#" @click="openResponsiveMenu()" class="responsive-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="menu-responsive" v-show="responsiveMenu">
+          <a href="#" @click="openResponsiveMenu()" class="close-menu-responsive">
+            <font-awesome-icon :icon="['fas', 'window-close']"/>
+            </a>
+          <ul>
+            <li><a class="page-scroll" href="/">Home</a></li>
+            <li><a class="page-scroll" href="/additional">Addtional Home</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <nuxt />
@@ -120,12 +136,16 @@ export default {
   name: 'header',
   data() {
     return {
-      dropdownMenu: false
+      dropdownMenu: false,
+      responsiveMenu: false
     }
   },
   methods: {
     openDropdownMenu() {
       this.dropdownMenu = !this.dropdownMenu
+    },
+    openResponsiveMenu() {
+      this.responsiveMenu = !this.responsiveMenu
     }
   }
 }
