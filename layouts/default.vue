@@ -14,7 +14,7 @@
             <li class="active">
               <a href="/" class="sub-menu">Home</a>
             </li>
-            <li><a href="#" class="sub-menu">Stories</a></li>
+            <li><a href="/pricing" class="sub-menu">Pricing</a></li>
             <li><a href="/additional" class="sub-menu">Additional Home</a></li>
             <li><a href="#" @mouseover="openDropdownMenu()" @mouseleave="openDropdownMenu()" class="sub-menu with-dropdown">Libraries</a></li>
             <li>
@@ -58,6 +58,7 @@
           <ul>
             <li><a class="page-scroll" href="/">Home</a></li>
             <li><a class="page-scroll" href="/additional">Addtional Home</a></li>
+            <li><a class="page-scroll" href="/pricing">Pricing</a></li>
           </ul>
         </div>
       </div>

@@ -243,29 +243,6 @@
         </div>
       </div>
     </section>
-    <section class="section-home-nine">
-      <div class="columns">
-        <div class="column left-content">
-          <img src="~assets/image/dog.png">
-        </div>
-        <div class="column is-three-fifths right-content">
-          <div class="content">
-            <h1>Start your free trial.</h1>
-            <p>Get notified about company updates, news and blog posts. We hate spam.</p>
-            <div class="form">
-              <form class="">
-                <input type="text" placeholder="Enter your email">
-                <button class="btn primary get-started" type="submit">Get Started</button>
-                <div class="description">
-                  <small>Free 14-day trial · Easy setup · Cancel any time. Check out </small>
-                  <a href="">Terms of Use.</a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 <script>
